@@ -19,7 +19,7 @@ data['State'] = soilmoisture['State']
 availgw = pd.read_csv(r"C:\My Files\projects\crop recommendation\updated crop\(info)State_wise_Ground_Water_Resources_Data_of_India_(In_bcm)_of_2020.csv", skiprows=2)
 data['State'] = availgw['State Name']
 
-df = pd.read_csv(r"C:\Users\aashi\Downloads\data.csv")
+df = pd.read_csv(r"C:\My Files\projects\crop recommendation\updated crop\data.csv")
 
 def run_linear_regression():
 
@@ -89,7 +89,7 @@ window = tk.Tk()
 window.title("State Data Statistics")
 window.geometry("1400x780")
 
-bg_image_path = r"C:\Users\aashi\Downloads\Untitled design.png"
+bg_image_path = r"C:\My Files\projects\crop recommendation\updated crop\Untitled design.png"
 bg_image = Image.open(bg_image_path)
 bg_image = bg_image.resize((1400, 780), Image.ANTIALIAS)
 bg_photo = ImageTk.PhotoImage(bg_image)
@@ -109,11 +109,11 @@ def show_data():
         availgw_data = availgw_data[['State Name','Annual Draft', 'Net Availability',
                                      'Future Irrigation Availability','Development(%)']]
         
-        soilrep = pd.read_csv(r"C:\Users\aashi\Downloads\soil report.csv", skiprows=4)
+        soilrep = pd.read_csv(r"C:\My Files\projects\crop recommendation\updated crop\soil report.csv", skiprows=4)
         data['State'] = soilrep['State']
         soilrep = soilrep[soilrep['State'].str.upper() == selected_state.upper()]
         
-        soiltextrep = pd.read_csv(r"C:\Users\aashi\Downloads\soil texture report.csv", skiprows=4)
+        soiltextrep = pd.read_csv(r"C:\My Files\projects\crop recommendation\updated crop\soil texture report.csv", skiprows=4)
         data['State'] = soiltextrep['State']
         soiltextrep = soiltextrep[soiltextrep['State'].str.upper() == selected_state.upper()]
 
