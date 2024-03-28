@@ -32,5 +32,8 @@ Our solution combines cutting-edge data science techniques with predictive model
 
 With our advisory system, farmers can harness the power of data science to optimize crop selection and cultivation practices, leading to increased productivity and sustainability in agriculture.
 
+## Output
+![TKinter Environment](outputcp.png)
+
 ## Contact
 For inquiries, suggestions, or issues, please contact [Aashiq Shareef](mailto:aashiqshareefas@gmail.com).
